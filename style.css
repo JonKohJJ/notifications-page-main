@@ -126,13 +126,16 @@ body{
     .body-wrapper{
         background-color: hsl(210, 60%, 98%);
     }
-
     .container{
         max-width: 630px;
         margin: 20px 0;
         background-color: white;
         border-radius: 6px;
         padding: 0 10px;
+    }
+    
+    .header .left{
+        font-size: 1.5rem;
     }
 
     .notification.image .content{
