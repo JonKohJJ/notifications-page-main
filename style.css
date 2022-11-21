@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;   
+    line-height: 1.4;
+    color: hsl(219, 14%, 63%);
+    font-weight: 500;
+}
+
+
+.body-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.container{
+    width: 95%;
+    max-width: 360px;
+    /* outline: 1px solid black; */
+    margin: 10px 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+}
+.header .left{
+    display: flex;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: hsl(224, 21%, 14%);
+}
+.header .left div{
+    margin-left: 10px;
+    padding: 0px 12px;
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 6px;
+    color: white;
+}
+.header .right{
+    cursor: pointer;
+}
+.header .right:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+
+.notification{
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* outline: 1px solid black; */
+}
+.notification.unread{
+    background-color: hsl(210, 60%, 98%);
+}
+.profile img{
+    max-width: 40px;
+    cursor: pointer;
+}
+.content{
+    margin-left: 15px;
+}
+.username{
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.username:hover{
+    color: hsl(219, 85%, 26%);
+}
+.post{
+    color: hsl(219, 12%, 42%);
+    margin-left: 4px;
+    cursor: pointer;
+}
+.post:hover{
+    color: hsl(219, 85%, 26%);
+}
+.group{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.reddot{
+    background-color: hsl(1, 90%, 64%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display:inline-block;
+    margin-left: 6px;
+}
+.private-message{
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 6px;
+    color: hsl(219, 13%, 54%);
+}
+.private-message:hover{
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+.picture img{
+    margin-left: 20px;
+    max-width: 40px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1440px){
+
+    .body-wrapper{
+        background-color: hsl(210, 60%, 98%);
+    }
+
+    .container{
+        max-width: 630px;
+        margin: 20px 0;
+        background-color: white;
+        border-radius: 6px;
+        padding: 0 10px;
+    }
+
+    .notification.image .content{
+        width: 100%;
+    }
+}
+
